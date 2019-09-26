@@ -1,0 +1,31 @@
+div#flexbox {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+div>div {
+    height: 25px;
+    width: 120px;
+    text-align: center;
+    background: #c1c3c3;
+    margin: 10px;
+    padding: 5px;
+}
+
+a:hover {
+    transition: ease-in-out;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+div>div:hover {
+    -webkit-transform: rotate(-360deg);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
