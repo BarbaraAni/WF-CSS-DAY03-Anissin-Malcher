@@ -1,0 +1,77 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+p {
+	font-size:0.9em;
+}
+.body {
+	border: solid black;
+	border-width: 1px;
+	width: 25%;
+	margin: 20px;
+	font-family: Verdana;
+}
+.blackbar {
+	border: solid black;
+	background-color: black;
+	margin: 0px 3px;
+}
+.bb {
+	font-size: 10pt;
+}
+.second {
+	display: flex;
+	font-size: 0.9em;
+}
+.cc {
+	text-align: right;
+}
+.third {
+	display: flex;
+	font-size: 0.7em;
+}
+.start {
+	margin-left: 2px;
+}
+.bar1 {
+	margin-left: 2px;
+	width: 60%;
+}
+.bar2 {
+	width: 20%;
+	text-align: right;
+}
+.bar3 {
+	width: 20%;
+	text-align: right;
+}
+[class*=aa] {
+	align-self: flex-end;
+	font-weight: bold;
+}
+.column1 {
+	margin-left: 2px;
+	width: 33%;
+}
+.column2 {
+	width: 22%;
+}
+.column3{
+	width: 20%;
+}
+.column4{
+	width: 10%;
+}
+footer {
+	text-align: center;
+	font-size: 0.7em;
+}
+.amountbla {
+	margin-left: 2px;
+	font-size: 0.7em;
+}
+
+.einzug {
+	margin-left: 20px;
+}
