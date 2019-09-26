@@ -1,3 +1,9 @@
+body {
+	background: #7af5d8;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
 div#flexbox {
     display: flex;
     flex-flow: row;

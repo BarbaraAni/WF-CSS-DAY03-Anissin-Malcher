@@ -1,0 +1,96 @@
+#main {
+width: 23%;
+height: 100%;
+border: 1px solid black;
+padding: 2px;
+padding-left: 5px;
+line-height: 35%;
+font-size: 70%;
+}
+
+div[id^=blackline] {
+	margin-left: 5px;
+	margin-right: 5px;
+	background: black;
+}
+
+hr {
+	margin-top: -4px;
+}
+p {
+	font-size: 90%;
+}
+
+#header {
+	line-height: 45%;
+}
+
+#header > h4 {
+	line-height: 25%;
+}
+
+#blackline1 {
+	height: 10px;
+}
+
+#amount {
+	width: 120px;
+	position: static;
+
+}
+
+#ingrediants {
+	width: 120px;
+	position: absolute;
+	left: 170px;
+	top: 116px;
+}
+#blackline2 {
+    height: 1px;
+    margin-top: -4px;
+}
+div[id^=calories] {
+	margin-top: -4px;
+	width: 120px;
+	position: static;
+
+}
+
+div[id^=value] {
+	width: 120px;
+	position: absolute;
+	left: 170px;
+	top: 136px;
+	margin-top: -4px;
+}
+#calories1 {
+	margin-left: 30px;
+	width: 140px;
+
+}
+
+#value1 {
+	top: 156px;
+}
+#blackline3 {
+    height: 3px;
+    margin-top: -1px;
+}
+
+#daily{
+	text-align:right;
+	margin-top: -4px;
+}
+#blackline4 {
+    height: 2px;
+    margin-top: -4px;
+}
+#calories1 {
+	margin-left: 30px;
+	width: 140px;
+
+}
+
+#value2 {
+	top: 192px;
+}
