@@ -1,0 +1,49 @@
+#link a {
+	border: solid pink;
+	border-width: 1px;
+}
+#caniuse {
+	transition: color 2s, font-size 3s;
+	transition-timing-function: ease-out;
+}
+#caniuse:hover {
+	color: green;
+	font-size: 20px;
+}
+#github {
+	transition: border 2s, font-size 3s;
+}
+#github:hover {
+	border: dotted blue;
+	border-width: 10px;
+}
+#codefactory {
+	transition: font-family 5s, border 1s;
+}
+#codefactory:hover {
+	border-width: 3px;
+	font-family: Verdana;
+}
+#slack {
+	transition: border 4s, color 4s;
+}
+#slack:hover {
+	border-color: silver;
+	border-width: 3px;
+	color: silver;
+}
+#stackoverflow {
+	text-decoration: none;
+	transition: border 2s, text-decoration 3s;
+}
+#stackoverflow:hover {
+	border-color: lime;
+	text-decoration: underline;
+}
+.w3schools {
+}
+.w3schools:hover {
+	-webkit-transform: rotate(-360deg);
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
