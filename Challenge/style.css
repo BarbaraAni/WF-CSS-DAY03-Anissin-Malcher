@@ -1,85 +1,178 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mansalva', cursive;
 }
 
 /* Style the header */
 header {
-  background-color: #666;
-  padding: 5px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+    background-image: linear-gradient(90deg,blue, lightblue,white);
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
-  width: 30%;
-  height: 500px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
+    float: left;
+    width: 30%;
+    height: 500px;
+    /* only for demonstration, should be removed */
+    background-image: linear-gradient(-90deg,white, white, blue);
+    padding: 20px;
 }
-
+nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: solid white 2px;
+  background-image: linear-gradient(black,blue);
+  width: 180px;
+  margin-bottom: 10px;
+}
+nav a:hover {
+  background-image: linear-gradient(blue,black,blue);
+  padding: 20px;
+  width: 250px;
+  font-size: 1.2em;
+  transition: 2s;
+}
 /* Style the list inside the menu */
 nav ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 500px; /* only for demonstration, should be removed */
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: lightblue;
 }
 
 /* Clear floats after the columns */
 section:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Style the footer */
 footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .phones {
+        flex-direction: column;
+    }
+
+    .phones>img {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .phone img:hover {
+      cursor: pointer;
+      height: 120%;
+      transition: 2s;
+    }
+    footer {
+        display: none;
+    }
+
+    #iphone {
+        margin-left: 75px;
+        width: 60%;
+    }
+
 }
 
-#data {
-height: 22px;
-border: 1px solid black;
-width: 300px;  
+@media (min-width: 600px) {
+
+
+
+
+
+
+    #userinfo {
+        height: 300px;
+    }
+
+    .phones {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        margin-top: 30px;
+        justify-content: space-between;
+
+    }
+
+    .phones img {
+        width: 30%;
+    }
+  
+    #huawei {
+      width: 40%;
+    }
 }
 
 #data2 {
-height: 20px;
-width: 200px;  
-background-color: black;
-color: white;
-padding-top: 2px;
-padding-left: 2px;
+    height: 20px;
+    width: 200px;
+    float: left;
+    background-image: linear-gradient(90deg,red,lightblue);
+    color: white;
 }
+
 #data3 {
-height: 20px;
-width: 250px;  
-background-color: black;
-color: white;
-padding-top: 2px;
-padding-left: 2px;
+    height: 20px;
+    width: 250px;
+    float: left;
+    background-image: linear-gradient(90deg,red,lightblue);
+    color: white;
+}
+
+#data {
+    height: 22px;
+    border: 1px solid black;
+    width: 300px;
+}
+button {
+  border: solid red 2px;
+}
+
+.phones img:hover {
+  cursor: pointer;
+ transform: scale(1.8, 1.5);
+ transition: 2s;
+
+}
+
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 150px;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: blue; /* Green */
+  color: white;
+  border-radius: 50%;
 }
